@@ -1,0 +1,5 @@
+* agl-vm
+Run AGL as a virtual machine
+** Purpose
+- Provide evaluation environment independent of specific hardware platform
+- Provide evaluation environment independent of host machine operating system
