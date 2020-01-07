@@ -16,4 +16,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision "image", type: :shell, privileged: false, inline: <<-SCRIPT
     wget --progress=bar:force:noscroll "#{mirror}/AGL/release/#{release}/latest/#{target}/deploy/images/#{target}/#{image}"
   SCRIPT
+  config.vm.provision "run", type: :shell, privileged: false, inline: "/vagrant/run.sh"
 end
